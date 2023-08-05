@@ -1,4 +1,7 @@
 #include <stdio.h>
+#define alpha 25
+#define letter_a 97
+#define letter_z 123
 void alphabet(){
     while(1){
         int i, c, mod, div;
@@ -7,15 +10,15 @@ void alphabet(){
         if (mod == 0){
             break;
         }
-        div = mod / 25;
-        mod = mod % 25 + 97;
+        div = mod / alpha;
+        mod = mod % alpha + letter_a;
         for (i = 0; i < div; i++){
-            for (c = 97; c < 123; c++){
+            for (c = letter_a; c < letter_z; c++){
                 printf("%c", c);
                 printf(" ");
             }
         }
-        for (c = 97; c < mod; c++){
+        for (c = letter_a; c < mod; c++){
             printf("%c", c);
             printf(" ");
         }
