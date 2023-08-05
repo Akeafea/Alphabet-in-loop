@@ -14,13 +14,11 @@ void alphabet(){
         mod = mod % alpha + letter_a;
         for (i = 0; i < div; i++){
             for (c = letter_a; c < letter_z; c++){
-                printf("%c", c);
-                printf(" ");
+                printf("%c ", c);
             }
         }
         for (c = letter_a; c < mod; c++){
-            printf("%c", c);
-            printf(" ");
+            printf("%c ", c);
         }
         printf("\n");
     }
